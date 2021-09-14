@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de bootstrap</title>
+    <!-- Agregar los metas author, descripcion, keywords -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/bootstrap-solid.svg" alt="logo de bootstrap" width="35px">
+                Ejemplo bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#listahamburguesa"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="listahamburguesa">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section class="container border border-primary my-3">
+        <h1>Primer web en bootstrap</h1>
+        <p>container</p>
+    </section>
+    <section class="container-fluid border border-danger my-3">
+        <p>contenedor fluido</p>
+    </section>
+    <section class="container">
+        <article>
+            <h2>Ejemplo de titulos</h2>
+            <hr>
+            <h3>Titulo h3</h3>
+            <h4 class="display-4">Titulo h4 - display de 1 a 4</h4>
+        </article>
+        <article>
+            <h2>Colores y textos</h2>
+            <hr>
+            <p class="text-primary lead">primary</p>
+            <p class="text-secondary">secondary</p>
+            <p class="text-warning">warning</p>
+            <p class="text-danger">danger</p>
+            <p class="text-info">info</p>
+            <p class="text-success">success</p>
+            <p class="text-dark">dark</p>
+            <p class="text-light bg-info">light</p>
+        </article>
+        <article>
+            <h2>Botones</h2>
+            <hr>
+            <button class="btn btn-primary">boton de prueba</button>
+            <button class="btn btn-success">boton de prueba</button>
+            <button class="btn btn-danger">boton de prueba</button>
+            <hr>
+            <button class="btn btn-outline-primary">boton de prueba 2</button>
+            <button class="btn btn-outline-success">boton de prueba 2</button>
+            <button class="btn btn-outline-danger">boton de prueba 2</button>
+            <hr>
+            <h2>Boton deshabilitado</h2>
+            <button class="btn btn-primary disabled">boton de prueba</button>
+            <button class="btn btn-outline-success disabled">boton de prueba 2</button>
+            <hr>
+            <h2>Boton activado</h2>
+            <button class="btn btn-primary active">boton de prueba</button>
+            <button class="btn btn-outline-success active">boton de prueba 2</button>
+            <hr>
+            <h2>Tamaño de los botones</h2>
+            <button class="btn btn-danger btn-sm">boton pequeño</button>
+            <button class="btn btn-danger">boton normal</button>
+            <button class="btn btn-danger btn-lg">boton grande</button>
+        </article>
+        <article class="my-5">
+            <h2>Lista</h2>
+            <hr>
+            <ul class="list-group shadow mb-5 bg-white rounded">
+                <li class="list-group-item">item 1</li>
+                <li class="list-group-item list-group-item-primary">item 2</li>
+                <li class="list-group-item">item 3</li>
+            </ul>
+        </article>
+        <article >
+            <h2>Sistema de grillas</h2>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-3 border border-danger">columna 1</div>
+                <div class="col-sm-12 col-md-4 col-lg-3 border border-danger">columna 2</div>
+                <div class="col-sm-12 col-md-4 col-lg-3 border border-danger">columna 3</div>
+                <div class="col-sm-12 col-md-4 col-lg-3 border border-danger">columna 4</div>
+            </div>
+        </article>
+    </section>
+    <!-- script de bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
